@@ -158,7 +158,7 @@ A: Using the symbols /* Comment goes here */
 
     31. How do I find out what file I am in, when I am using the command line?
 
-A: The command line will show the directory, you can also cd ~ to exit all dir or ls to see what is in the dir.
+A: The pwd command (print working directory).
 
     32. Using the command line - how do I see a list of files/folders in my current folder?
 
