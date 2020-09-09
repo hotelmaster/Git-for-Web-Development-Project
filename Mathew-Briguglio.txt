@@ -1,0 +1,222 @@
+// https://codepen.io/hotelmaster/pen/WNwMQYP
+
+    1. What is Semantic HTML?
+
+A: Semantic HTML, used to mark up plain text, implies there is a meaning for the structuring of the tags, such as head tags
+   will always hold a title and info about a webpage. Semantic HTML is processed by a web browser.
+
+    2. What is HTML used for?
+
+A: HTML is a markup language used to organize the plain text on a webpage. It will be styled using CSS.
+
+    3. What is an attribute and where do we put it?
+
+A: An attribute holds an attribute:value pair that modifies an HTML element. The attribute is placed within the opening HTML tag.
+   For example: <img src=" "> The src attribute can be used to modify an image tag.
+ 
+    4. What is the h1 tag used for? How many times should I use it on a page?
+
+A: The h1 tag is the largest header of h1 through h6. It is the main header and should only be used once on a webpage. However,
+   it is okay to use multiple h2 or h3 tags.
+
+    5. Name two tags that have required attributes
+
+A: An image tag needs a scr attribute and an anchor tag needs an href, hyperlink reference, attribute.
+
+    6. What do we put in the head of our HTML document?
+
+A: The title is nested within the head of an HTML document; the head also includes style and script tags along with information
+   about a web page that browsers need to make modifications to the webpage.
+
+    7. What is an id?
+
+A: An id is an attrbute that may be used in accordance with CSS to style only one HTML element or to store within a javascript variable
+   with which modifications in a JS file may be made to the HTML (related to events and event handlers).
+
+    8. What elements can I add an id to?
+
+A: An id may be added to almost any HTML element that can be styled or manipulated with javascript.
+
+    9. How many times can I use the same id on a page?
+
+A: Each id can be used to select only one element. To select two different div's using id's, each div would require a unique id name.
+
+    10. What is a class?
+A: A class is similar to a div because it is also an HTML attribute; however, one class name may be used to select one or more HTML
+   elements. I.e. The class "box" can be used to describe, say, 10 div's if desired.
+
+    11. What elements can I add a class to?
+
+A: A class name may be added to any element.
+
+    12. How many times can I use the same class on a page?
+
+A: No limits for a class.
+
+    13. How do I get my link to open in a new tab?
+
+A: Using the anchor tags, one attribute, href, will hold the url for the link and a second attribute target="_blank" will open
+   the link in a new tab or browser window depending on the browser being used.
+
+    14. What is the alt attribute in the image tag used for?
+
+A: In case the browser isn't able to retrieve the image, then the alt attribute will show text (an alternative to the actual image)
+   describing the image.
+
+    15. How do I reference an id?
+
+A: In the CSS a hashtag or pound symbol is used as follows: #idName {/* CSS here */}
+
+    16. What is the difference between a section and a div
+
+A: A section is semantically different from a div; a section represents a speicific portion of a web page such as contact info or a section
+   with an image carousel or maybe just text info whereas a div element is just an arbitrary container.
+
+    17. What is CSS used for?
+
+A: Aka cascading style sheets, is used to style an html document. It contains many property:value pairs, such as height:30px, font-weight:bold,
+   font-style:italic, margin:10%, padding:0 20px 0 20px, display:flex, color:blue, font-size:20px, ... etc.
+
+    18. How to we select an element? Example - every h2 on the page
+
+A: Using a selector in CSS as follows: h2 {/* CSS here */}
+
+Ex. h2 {
+	 font-size:35px;
+	 color:blue;
+	 background-color:lightgrey;
+	}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+A: A class can select one or more html elements whereas an id may only select one element.
+
+
+Ex. Using a class
+    In html: <p class="firstClass">I'm a paragraph!</p><br>
+	     <div class="firstClass">I'm a div!</div>
+
+    In CSS: .firstClass { /* CSS here for both p and div */ }
+
+Ex. Using id's
+    In html: <p id="specialClass">I'm a paragraph!</p><br>
+	     <div id="upperClass">I'm a div!</div>
+
+    In CSS: #specialClass { /* CSS here only for p */ }
+	    #upperClass { /* CSS here only for div */ }
+
+    20. How do we select classes in CSS?
+
+A: Using the dot operator before the class name
+
+    21. How do we select a p element with a single class of “human”?
+
+A: we use .human { /* CSS here */ } in the CSS
+
+    22. What is a parent child selector? When would this be useful?
+
+A: Normally a parent container will pass down it's CSS to all child containers (in other words the child elements inherit the style of
+   the parent element) or > operator may be used to specify the child elements within a parent we want to style. I.e. nav > a { /* CSS here */ }.
+   Utilizing both techniques is useful to make CSS easier to write.
+
+    23. How do you select all links within a div with the class of sidebar?
+
+A: div > .sidebar > a { /* CSS here */ }
+
+    24. What is a pseudo selector?
+
+A: Pseudo selectors are keywords added to CSS selectors that specify a special state, i.e. hover.
+ Ex. div:hover { /* CSS here */ } When the user hovers over the div container this CSS will be applied.
+
+    25. What do we use to change the spacing between lines?
+
+A: We use the line-height property to give a value either based on percent of the normal line spacing. I.e. **Selector** { line-height:110%; }
+   The value is relative to the normal line-height whether it is a percent or a constant value, say, 1.6
+
+    26. What do we use to change the spacing between letters?
+
+A: The letter-spacing property; i.e. Selector { letter-spacing:2px; }
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+A: Using text-transform:capitalize (to capitalize the first letter of every word) or the values uppercase (all letters uppercase)
+   and lowercase (all letters lowercase).
+
+    28. How do I add a 1px border around my div that is dotted and black?
+
+A: div { border:1px dotted black; }
+
+    29. How do I select everything on the page?
+
+A: The universal selector
+
+* { /* CSS here */ }
+
+    30. How do I write a comment in CSS?
+
+A: Using the symbols /* Comment goes here */
+
+    31. How do I find out what file I am in, when I am using the command line?
+
+A: The pwd command (print working directory).
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+
+A: Using the ls command to list the contents.
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+
+A: You may not remove a folder, but a file can be removed with the rm **fileName** command. There will not be any warning messages.
+
+    34. Why should I use version control?
+
+A: Version control is extremely useful for keeping track of changes made on different branches, and can all be done efficiently
+   from the Git Bash terminal. Important in case mistakes are made and a previous functioning version of a document is needed.
+
+    35. How often should I commit to github?
+
+A: It is best to commit often with small changes.
+
+    36. What is the command we would use to push our repo up to github?
+
+A: git push -u origin **fileName**
+
+    37. Walk me through Lambda's git flow. 
+
+A:
+	Fork a repo (on Github webpage)
+	git clone **repo address** (in git bash terminal; if already made a branch for this clone, you may open the files in local files and actually modify them)
+	git checkout -b **branchName** (if no branch, then make a branch)
+	touch **fileName** (to make some file you want to add to your branch)
+	git status (to check if anything in your branch has been modified)
+	git add . (add all changed you've made to those files in you branch; or git add **fileName**)
+	git commit -m "short descriptive msg" (to save those changes and provide a short message)
+	git push -u origin **branchName** (to push this branch commit(s) back up to the cloud)
+	Create a pull request or PR on github webpage (we need our TL's to merge the PR)
+	
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+
+A: A block element will fill the width of the page whereas an inline element will only fit the content in the container allowing
+   another element to be placed in the same row if the width of the page allows it.
+
+    2. What happens when an element is positioned absolutely?
+
+A: It will be positioned relative to the entire page, not the container.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+
+A: Use a selector to set display to inline-block, this allows for width and height to be applied and padding and margins to be utilized.
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+A: header (h1, h2, ..., h6), paragraph, and div are display block elements.
+   Input, a, input, and span are display inline by default.
+   Button, div, and img elements are display inline-block.
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+
+A: The width is determined / calculated for us after setting flex-direction to row or column. If the preferred size doesn't allow all containers to
+   fit in one row then they will wrap around to the row(s) below.
